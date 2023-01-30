@@ -1,50 +1,22 @@
-import React from "react";
-import "@trendmicro/react-sidenav/dist/react-sidenav.css";
-
-import SideNav, {
-  Toggle,
-  Nav,
-  NavItem,
-  NavIcon,
-  NavText
-} from "@trendmicro/react-sidenav";
-
-class SideNavBar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isVisible: true
-    };
-  }
-
+import { Component } from "react"
+import './SideNavbar.css';
+import Navbar from "./Navbar";
+class SideNavBar extends Component {
   render() {
     return (
-      <SideNav expanded={this.state.isVisible}>
-        <SideNav.Toggle
-          onClick={() => {
-            this.setState({ isVisible: !this.state.isVisible });
-          }}
-        />
-        <SideNav.Nav defaultSelected="home">
-          <NavItem eventKey="home">
-            <NavIcon>
-              <i className="fa fa-fw fa-home" style={{ fontSize: "1.75em" }} />
-            </NavIcon>
-            <NavText>Home</NavText>
-          </NavItem>
-          <NavItem eventKey="placed orders">
-            <NavIcon>
-              <i
-                className="fa fa-fw fa-line-chart"
-                style={{ fontSize: "1.75em" }}
-              />
-            </NavIcon>
-            <NavText>placed orders</NavText>
-          </NavItem>
-        </SideNav.Nav>
-      </SideNav>
-    );
+      <>
+      <Navbar/>
+        <div class="sidebar">
+          <a class="active" href="#home">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+
+      
+      </>
+
+    )
   }
 }
-
 export default SideNavBar;

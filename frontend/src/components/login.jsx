@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import Navbar from "./Navbar";
 
 class Login extends Component {
 
     render() {
         return (
+            <>
+            <Navbar/>
             <div class="loginbox">
                 <img src="logav.png" alt="" class="avatar" width="80" height="80" />
                 <h1>Login Here</h1>
@@ -24,6 +27,7 @@ class Login extends Component {
                 </form>
      
             </div>
+            </>
 
         )
     }
