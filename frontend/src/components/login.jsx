@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./Navbar";
+import './login.css';
+import img from "./images/img2.jpg";
 
 class Login extends Component {
 
@@ -8,7 +10,7 @@ class Login extends Component {
             <>
             <Navbar/>
             <div class="loginbox">
-                <img src="logav.png" alt="" class="avatar" width="80" height="80" />
+            <img src={img} alt="img" class="avatar" width="80" height="80" style={{ opacity: 1}} />
                 <h1>Login Here</h1>
                 <form>
                     <p>Username</p>
@@ -17,7 +19,7 @@ class Login extends Component {
                     <input type="password" name="" placeholder="Enter your Password" /><br />
                     <input type="submit" name="" value="login" /><br />
                     <a href="google.com">lost your password</a><br />
-                    <a href="google.com">dont have an account?</a>
+                    <a href="http://localhost:3000/signup">dont have an account?</a>
 
 
                     
