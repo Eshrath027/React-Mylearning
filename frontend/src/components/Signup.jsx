@@ -21,7 +21,10 @@ class Signup extends Component {
                         <input type="text" name="" placeholder="Enter your Email" />
                         <p>password</p>
                         <input type="password" name="" placeholder="Enter your Password" /><br />
+                        <div>
                         <input type="checkbox" id="box" name=""/><label for="box"> Remember the password</label><br></br>
+                        </div>
+                        
                         <input type="submit" name="" value="Sign up" /><br />
 
 

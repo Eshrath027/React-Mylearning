@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import Footer from './components/Footer';
 import Login from "./components/login"
 import Navbar from "./components/Navbar"
-import SideNavBar from './components/SideNavbar';
+
 import Signup from './components/Signup';
 function App() {
   return (
